@@ -13,7 +13,7 @@ library(tidyverse)  # a series of libraries to simplify data manipulation
 
 ## Import the data
 # First get some weekly death rate race data (wdrr) from the NYC github site.
- <- "https://raw.githubusercontent.com/nychealth/coronavirus-data/master/trends/weekly-death-rate-race.csv"
+wdrr_location <- "https://raw.githubusercontent.com/nychealth/coronavirus-data/master/trends/weekly-death-rate-race.csv"
 # Read the data into a dataframe. Make sure that "week_ending" is imported
 # as a "date" variable not as a "character" variable
 wdrrDF <- read_csv(wdrr_location, 
