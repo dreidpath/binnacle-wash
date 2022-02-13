@@ -32,8 +32,4 @@ l_wdrrDF <- pivot_longer(wdrrDF, # use the wdrrDF and save result as l_wdrrDF
                          values_to = "mr") # New var (mr) to hold the mortality rate
 
 
-## Plot the data
-l_wdrrDF %>% 
-  filter(ethnic != "all_race_ethnicity") %>%
-  ggplot(aes(x = week_ending, y = mr, color = ethnic)) +
-  geom_line()
+
